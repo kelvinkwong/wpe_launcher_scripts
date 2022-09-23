@@ -6,4 +6,4 @@
 [[ "$0" == *"foxtel"* ]] && inspect=${ENV_INSPECT_FOXTEL}
 
 echo [$0] starting wpe debugger on ${inspect}
-/usr/local/libexec/webkit2gtk-4.0/MiniBrowser inspector://${inspect}
+MiniBrowser inspector://${inspect}
