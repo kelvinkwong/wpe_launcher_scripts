@@ -1,6 +1,11 @@
 #!/bin/bash
 
-[[ -f ~/.env ]] && . ~/.env
+if [[ -f ~/.env ]]
+then
+	. ~/.env
+else
+	echo "ENV_IP=10.0.0.2" > ~/.env
+fi
 
 echo "[$0] enter iq ip address (${ENV_IP}):"
 read ip
