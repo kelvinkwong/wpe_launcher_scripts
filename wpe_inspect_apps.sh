@@ -1,6 +1,6 @@
 #!/bin/bash
 
-[[ -f ~/.env ]] && . ~/.env
+[[ -f ~/.env ]] && source ~/.env
 
 [[ "$0" == *"apps"* ]] && inspect=${ENV_INSPECT_APPS}
 [[ "$0" == *"foxtel"* ]] && inspect=${ENV_INSPECT_FOXTEL}
